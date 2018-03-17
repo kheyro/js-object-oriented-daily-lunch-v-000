@@ -78,4 +78,8 @@ class Employer {
   employees() {
     return store.customers.filter((customer) => customer.employerId === this.id )
   }
+
+  deliveries() {
+    return store.customers.filter((customer) => customer.employerId === this.id )
+  }
 }
