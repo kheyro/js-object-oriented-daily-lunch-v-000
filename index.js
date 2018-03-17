@@ -62,7 +62,7 @@ class Meal {
     return store.deliveries.filter((delivery) => delivery.mealId === this.id)
   }
 
-  custmers() {
+  customers() {
     return this.deliveries().map((delivery) => delivery.customer())
   }
 
