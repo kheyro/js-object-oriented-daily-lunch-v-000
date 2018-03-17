@@ -95,6 +95,7 @@ class Employer {
       function (employee) {
         employee.meals().forEach(
           function (meal) {
+            console.log()
             stats[meal.id] += 1
           }
         )
