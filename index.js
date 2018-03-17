@@ -8,5 +8,14 @@ class Customer {
     store.customers.push(this)
   }
 
+}
+
+
+class Delivery {
+  constructor(name) {
+    this.id = ++customerId
+    this.name = name
+    store.customers.push(this)
+  }
 
 }
