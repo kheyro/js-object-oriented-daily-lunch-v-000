@@ -23,6 +23,6 @@ class Meal {
     this.id = ++mealId
     this.title = title
     this.price = price
-    store.deliveries.push(this)
+    store.meal.push(this)
   }
 }
