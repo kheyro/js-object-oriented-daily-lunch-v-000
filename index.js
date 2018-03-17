@@ -90,6 +90,6 @@ class Employer {
   }
 
   mealTotals() {
-    console.log(this.employees().meals())
+    console.log(this.employees())
   }
 }
