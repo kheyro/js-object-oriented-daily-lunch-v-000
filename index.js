@@ -86,7 +86,6 @@ class Employer {
   }
 
   meals() {
-    meals = this.employees().map((employee) => employee.meals())
-    return [...new Set(meals)]
+    return [...new Set(this.employees().map((employee) => employee.meals()))]
   }
 }
