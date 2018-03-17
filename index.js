@@ -50,6 +50,11 @@ class Meal {
   static byPrice() {
     return store.meals.sort((a, b) => b.price - a.price)
   }
+
+  deliveries() {
+    return store.deliveries.find((delivery) => delivery.mealId === this.id)
+  }
+
 }
 
 class Employer {
