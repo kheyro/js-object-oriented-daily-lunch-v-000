@@ -7,8 +7,10 @@ class Delivery {
     this.name = name
     this.id = deliveryId++
     this.employerId = this.employer.id
+
+    store.deliveries.push(this)
   }
 
-  
+
 
 }
