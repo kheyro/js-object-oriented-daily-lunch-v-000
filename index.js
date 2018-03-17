@@ -90,9 +90,9 @@ class Employer {
   }
 
   mealTotals() {
-    this.employees().map(
+    this.employees().forEach(
       function (employee) {
-        console.log(employee.meals())
+        employee.meals()
       }
     )
   }
