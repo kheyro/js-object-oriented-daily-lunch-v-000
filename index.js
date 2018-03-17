@@ -52,7 +52,7 @@ class Meal {
   }
 
   deliveries() {
-    return store.deliveries.find((delivery) => delivery.mealId === this.id)
+    return store.deliveries.filter((delivery) => delivery.mealId === this.id)
   }
 
 }
