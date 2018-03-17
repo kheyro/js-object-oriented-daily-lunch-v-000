@@ -80,11 +80,7 @@ class Employer {
   }
 
   deliveries() {
-    let allDeliveries = this.employees().map(function (employee) {
-      return employee.deliveries()
-    })
-    let merged = [].concat.apply([], allDeliveries);
-    return merged;
+    return this.employees().map((employee) => employee.deliveries())
   }
 
   meals() {
