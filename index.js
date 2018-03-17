@@ -85,6 +85,7 @@ class Employer {
   }
 
   meals() {
+    
     let meals = [...new Set(this.employees().map((employee) => employee.meals()))]
     console.log(meals)
     return [].concat.apply([], meals);
