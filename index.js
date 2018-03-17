@@ -1,16 +1,9 @@
 let store = { deliveries: [], meals: [], employers: [], customers: []}
-let deliveryId = 0
+let deliveryId = 0, customerId = 0
 
-class Delivery {
-
-  contructor(name, employer) {
+class Customer {
+  constructor(name, employer) {
     this.name = name
-    this.id = deliveryId++
-    this.employerId = this.employer.id
-
-    store.deliveries.push(this)
+    this.employer = emloyer.id
   }
-
-
-
 }
