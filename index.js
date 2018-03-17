@@ -30,6 +30,10 @@ class Delivery {
   customer() {
     return store.customers.find((customer) => customer.id === this.customerId)
   }
+
+  meal() {
+    return store.meals.find((meal) => meal.id === this.mealId)
+  }
 }
 
 class Meal {
