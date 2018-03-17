@@ -1,6 +1,5 @@
 let store = { deliveries: [], meals: [], employers: [], customers: []}
 let deliveryId = 0, customerId = 0, mealId = 0, employerId = 0
-let stats = {}
 
 class Customer {
   constructor(name, employer) {
@@ -91,6 +90,7 @@ class Employer {
   }
 
   mealTotals() {
+    let stats = {}
     let meals = this.deliveries().map((delivery) => delivery.meal())
     // this.employees().forEach(
     //   function (employee) {
