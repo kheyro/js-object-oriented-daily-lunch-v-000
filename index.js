@@ -89,7 +89,7 @@ class Employer {
     return [...new Set(meals)];
   }
 
-  employerStats {
+  employerStats() {
     
   }
 }
