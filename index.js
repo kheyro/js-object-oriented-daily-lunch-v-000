@@ -88,4 +88,8 @@ class Employer {
     let meals = this.deliveries().map((delivery) => delivery.meal())
     return [...new Set(meals)];
   }
+
+  employerStats {
+    
+  }
 }
