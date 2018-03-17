@@ -95,10 +95,12 @@ class Employer {
       function (employee) {
         employee.meals().forEach(
           function (meal) {
-            stats[meal.id] += 1 
+            stats[meal.id] += 1
           }
         )
       }
     )
+    console.log(stats)
+    return stats
   }
 }
