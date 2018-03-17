@@ -8,8 +8,6 @@ class Customer {
     store.customers.push(this)
   }
 
-
-
   totalSpent() {
 
   }
