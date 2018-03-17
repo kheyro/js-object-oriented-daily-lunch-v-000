@@ -81,7 +81,6 @@ class Employer {
 
   deliveries() {
     return this.employees().map(function (employee) {
-      console.log(employee.name)
       return employee.deliveries()
     })
   }
