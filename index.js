@@ -92,7 +92,7 @@ class Employer {
   mealTotals() {
     this.employees().map(
       function (employee) {
-        employee.meals().map()
+        console.log(employee.meals())
       }
     )
   }
