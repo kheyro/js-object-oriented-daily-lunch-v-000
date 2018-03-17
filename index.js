@@ -92,10 +92,8 @@ class Employer {
   mealTotals() {
     let stats = {}
     let meals = this.deliveries().map((delivery) => delivery.meal())
-
     meals.forEach(
       function (meal) {
-        console.log(meal, stats[meal.id])
         stats[meal.id] = (stats[meal.id] === undefined) ? 1 : ++stats[meal.id]
       }
     )
