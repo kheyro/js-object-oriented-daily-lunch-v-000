@@ -25,6 +25,14 @@ class Meal {
     this.price = price
     store.meals.push(this)
   }
+
+  byPrice() {
+    store.meals.sort(
+      function (a, b) {
+        return a.price - b.price
+      }
+    )
+  }
 }
 
 class Employer {
