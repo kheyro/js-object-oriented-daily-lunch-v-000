@@ -28,11 +28,11 @@ class Customer {
 class Delivery {
   constructor(meal, customer) {
     this.id = ++deliveryId
-    if (meal) {
-      this.mealId = meal.id
-    }
     if (customer) {
       this.customerId = customer.id
+    }
+    if (meal) {
+      this.mealId = meal.id
     }
     store.deliveries.push(this)
   }
@@ -82,7 +82,8 @@ class Employer {
   deliveries() {
     return this.employees().map(function (employee) {
       console.log(employee.deliveries())
-      return employee.deliveries()})
+      return employee.deliveries()
+    })
   }
 
   meals() {
