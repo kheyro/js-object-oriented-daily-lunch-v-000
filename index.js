@@ -95,7 +95,7 @@ class Employer {
       function (employee) {
         employee.meals().forEach(
           function (meal) {
-            stats[meal.id] += 1
+            stats[meal.id] = (stats[meal.id] === undefined) ? 0 : stats[meal.id]++
           }
         )
       }
