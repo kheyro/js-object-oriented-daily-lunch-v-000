@@ -1,5 +1,5 @@
 let store = { deliveries: [], meals: [], employers: [], customers: []}
-let deliveryId = 0, customerId = 0
+let deliveryId = 0, customerId = 0, mealId = 0
 
 class Customer {
   constructor(name) {
