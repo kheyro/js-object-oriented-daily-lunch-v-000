@@ -85,8 +85,8 @@ class Employer {
   }
 
   meals() {
-    let meals = [...new Set(this.employees().map((employee) => employee.meals()))]
-    console.log(meals)
+    let meals = this.employees().map((employee) => employee.meals())
+    console.log([...new Set(meals)])
     return [].concat.apply([], meals);
   }
 }
