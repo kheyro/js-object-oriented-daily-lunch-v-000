@@ -93,7 +93,11 @@ class Employer {
   mealTotals() {
     this.employees().forEach(
       function (employee) {
-        console.log(employee.meals())
+        employee.meals().forEach(
+          function (meal) {
+            stats[meal.id] += 1 
+          }
+        )
       }
     )
   }
