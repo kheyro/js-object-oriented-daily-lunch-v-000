@@ -80,7 +80,7 @@ class Employer {
   }
 
   deliveries() {
-    return this.employees().map((employee) => employee.deliveries())
+    let deliveries = this.employees().map((employee) => employee.deliveries())
   }
 
   meals() {
