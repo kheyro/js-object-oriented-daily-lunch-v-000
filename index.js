@@ -19,7 +19,7 @@ class Customer {
 
 
 class Delivery {
-  constructor(meal = null, customer = null) {
+  constructor(meal, customer {
     this.id = ++deliveryId
     if (meal) {
       this.mealId = meal.id
