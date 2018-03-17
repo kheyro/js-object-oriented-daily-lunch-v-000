@@ -90,6 +90,10 @@ class Employer {
   }
 
   mealTotals() {
-    console.log(this.employees())
+    this.employees().map(
+      function (employee) {
+        
+      }
+    )
   }
 }
