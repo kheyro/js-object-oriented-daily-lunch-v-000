@@ -15,7 +15,7 @@ class Delivery {
   constructor(name) {
     this.id = ++customerId
     this.name = name
-    store.customers.push(this)
+    store.deliveries.push(this)
   }
 
 }
