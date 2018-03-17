@@ -81,6 +81,7 @@ class Employer {
 
   deliveries() {
     let deliveries = this.employees().map((employee) => employee.deliveries())
+    console.log(deliveries)
   }
 
   meals() {
