@@ -82,4 +82,8 @@ class Employer {
   deliveries() {
     return this.employees().map((employee) => employee.deliveries())
   }
+
+  meals() {
+    return this.employees().map((employee) => employee.deliveries())
+  }
 }
