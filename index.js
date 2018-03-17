@@ -91,15 +91,23 @@ class Employer {
   }
 
   mealTotals() {
-    this.employees().forEach(
-      function (employee) {
-        employee.meals().forEach(
-          function (meal) {
-            stats[meal.id] = (stats[meal.id] === undefined) ? 1 : ++stats[meal.id]
-          }
-        )
+    let meals = this.deliveries().map((delivery) => delivery.meal())
+    // this.employees().forEach(
+    //   function (employee) {
+    //     employee.meals().forEach(
+    //       function (meal) {
+    //         stats[meal.id] = (stats[meal.id] === undefined) ? 1 : ++stats[meal.id]
+    //       }
+    //     )
+    //   }
+    // )
+
+    meals.forEach(
+      function (meal) {
+        stats[meal.id] = (stats[meal.id] === undefined) ? 1 : ++stats[meal.id]
       }
     )
+
     console.log(stats)
     return stats
   }
