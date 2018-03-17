@@ -18,10 +18,12 @@ class Customer {
 class Delivery {
   constructor(meal = null, customer = null) {
     this.id = ++deliveryId
-
-    this.mealId = meal.id
-
-    // this.customerId = customer.id
+    if (meal) {
+      this.mealId = meal.id
+    }
+    if (customer) {
+      this.customerId = customer.id
+    }
     store.deliveries.push(this)
   }
 }
