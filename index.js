@@ -27,8 +27,7 @@ class Meal {
   }
 
   static byPrice() {
-    return store.meals.sort((a, b) => a.price - b.price)
-    console.log(store.meals)
+    return store.meals.sort((a, b) => b.price - a.price)
   }
 }
 
