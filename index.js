@@ -90,6 +90,6 @@ class Employer {
   }
 
   employerStats() {
-    
+    console.log(this.meals())
   }
 }
