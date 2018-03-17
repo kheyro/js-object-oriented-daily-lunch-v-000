@@ -2,9 +2,10 @@ let store = { deliveries: [], meals: [], employers: [], customers: []}
 let deliveryId = 0, customerId = 0, mealId = 0, employerId = 0
 
 class Customer {
-  constructor(name, employerId) {
+  constructor(name, employer) {
     this.id = ++customerId
     this.name = name
+    this.employerId = employer.id
     store.customers.push(this)
   }
 
