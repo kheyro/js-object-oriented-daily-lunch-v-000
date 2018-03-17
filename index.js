@@ -12,7 +12,9 @@ class Customer {
   }
 
   totalSpent() {
-
+    return this.meals().reduce(function (agg, el, i, arr) {
+      return agg + el.price
+    },0)
   }
 
   deliveries() {
