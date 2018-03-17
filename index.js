@@ -19,10 +19,9 @@ class Delivery {
 }
 
 class Meal {
-  constructor(title, price) {
+  constructor(title) {
     this.id = ++mealId
     this.title = title
-    this.price = price
     store.meal.push(this)
   }
 }
