@@ -91,7 +91,7 @@ class Employer {
 
   mealTotals() {
     this.employees().forEach(
-      function (current, index) {
+      function (employee) {
         employee.meals()
       }
     )
